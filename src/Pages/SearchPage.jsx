@@ -1,4 +1,4 @@
-import AgentProgress from "../components/AgentProgress";
+import AgentProgress from "../components/Agentprogress";
 import SearchForm from "../components/SearchForm";
 
 export default function SearchPage({ onSubmit, status, progress, error }) {
