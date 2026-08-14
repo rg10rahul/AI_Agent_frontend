@@ -6,7 +6,7 @@ import ResultsPage from "./Pages/ResultsPage";
 import SearchPage from "./Pages/SearchPage";
 import Sidebar from "./components/Sidebar";
 
-// change this one string to rename the app everywhere
+
 const APP_NAME = "AutoCompare";
 
 const STATUS_STYLES = {
@@ -77,7 +77,7 @@ export default function App() {
         if (job.status === "done") {
           setResult(job.result);
           setStatus("done");
-          navigate("/results"); // redirect to results on success
+          navigate("/results");
           clearInterval(pollRef.current);
         } else if (job.status === "failed") {
           setError(job.error || "Search failed");

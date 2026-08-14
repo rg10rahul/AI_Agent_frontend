@@ -11,7 +11,7 @@ export default function SearchForm({ onSubmit, disabled }) {
 
   return (
     <form className="bg-surface border border-border rounded-xl shadow-sm p-6" onSubmit={handleSubmit}>
-      <label className="block text-sm font-medium text-text mb-2" htmlFor="query">
+      <label className="block text-sm font-medium text-text mb-4" htmlFor="query">
         What are you looking for?
       </label>
       <input
@@ -24,16 +24,17 @@ export default function SearchForm({ onSubmit, disabled }) {
         onChange={(e) => setQuery(e.target.value)}
         disabled={disabled}
       />
-
-      <button
-        className="mt-4 px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
-                   text-sm font-semibold shadow-sm transition-colors
-                   disabled:opacity-55 disabled:cursor-not-allowed justify-center"
-        type="submit"
-        disabled={disabled}
-      >
-        {disabled ? "Searching…" : "Find the best deal"}
-      </button>
+      <div className="mt-6 flex justify-center">
+        <button
+          className="mt-6 px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
+                    text-sm font-semibold shadow-sm transition-colors
+                    disabled:opacity-55 disabled:cursor-not-allowed"
+          type="submit"
+          disabled={disabled}
+        >
+          {disabled ? "Searching…" : "Find the best deal"}
+        </button>
+      </div>
     </form>
   );
 }

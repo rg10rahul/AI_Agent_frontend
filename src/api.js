@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8020";
+const API_BASE = "https://ai-agent-backend-lser.onrender.com/";
 
 export async function startScrape(query) {
   const res = await fetch(`${API_BASE}/scrape`, {
