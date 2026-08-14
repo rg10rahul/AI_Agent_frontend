@@ -109,7 +109,7 @@ export default function App() {
           <Logo />
           <span className="font-bold text-[17px] tracking-tight text-white">{APP_NAME}</span>
           <span className="hidden md:inline text-[13px] text-white/40 ml-1">
-            car price comparison
+            car price comparison agent
           </span>
         </div>
         <span
