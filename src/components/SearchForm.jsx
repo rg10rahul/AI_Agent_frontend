@@ -24,9 +24,9 @@ export default function SearchForm({ onSubmit, disabled }) {
         onChange={(e) => setQuery(e.target.value)}
         disabled={disabled}
       />
-      <div className="mt-6 flex justify-center">
+      <div className="mt-4 flex justify-center">
         <button
-          className="mt-4 px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
+          className="px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
                     text-sm font-semibold shadow-sm transition-colors
                     disabled:opacity-55 disabled:cursor-not-allowed"
           type="submit"
