@@ -16,7 +16,7 @@ export default function SearchForm({ onSubmit, disabled }) {
       </label>
       <input
         id="query"
-        className="w-full px-3.5 py-3 rounded-lg border border-border-strong bg-bg text-text font-mono text-[15px]
+        className="w-full px-3.5 py-4 rounded-lg border border-border-strong bg-bg text-text font-mono text-[15px]
                    focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary-soft transition-colors
                    disabled:opacity-60"
         placeholder="cars below 15L, best mileage under 10L, Honda City under 12L…"
@@ -26,7 +26,7 @@ export default function SearchForm({ onSubmit, disabled }) {
       />
       <div className="mt-6 flex justify-center">
         <button
-          className="mt-6 px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
+          className="mt-4 px-6 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-lg
                     text-sm font-semibold shadow-sm transition-colors
                     disabled:opacity-55 disabled:cursor-not-allowed"
           type="submit"
