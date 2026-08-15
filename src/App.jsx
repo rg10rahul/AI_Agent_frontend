@@ -7,7 +7,7 @@ import SearchPage from "./Pages/SearchPage";
 import Sidebar from "./components/Sidebar";
 
 
-const APP_NAME = "AutoCompare";
+const APP_NAME = "AutoHunter AI";
 
 const STATUS_STYLES = {
   idle: "border-white/15 text-white/50",
